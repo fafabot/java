@@ -1,0 +1,19 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class teste {
+
+    public static void main(String[] args) {
+        
+    	contagem(5);
+        Scanner scanner = new Scanner(System.in);
+    }
+    
+    public static void contagem(int limite) {
+        for (int i = 1; i <= limite; i++) {
+            System.out.println(i);
+        }
+    }
+    
+}
