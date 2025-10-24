@@ -1,4 +1,4 @@
-2025/10/17-16:00:10.579 329c Reusing MANIFEST C:\Users\TDS1\Documents\GitHub\java\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
-2025/10/17-16:00:10.584 329c Recovering log #3
-2025/10/17-16:00:10.584 329c (ignoring error) C:\Users\TDS1\Documents\GitHub\java\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/000003.log: dropping 3980 bytes; Corruption: checksum mismatch
-2025/10/17-16:00:10.588 329c Reusing old log C:\Users\TDS1\Documents\GitHub\java\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/000003.log 
+2025/10/24-13:11:42.352 4854 Reusing MANIFEST C:\Users\TDS1\Documents\GitHub\java\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
+2025/10/24-13:11:42.379 4854 Recovering log #3
+2025/10/24-13:11:42.379 4854 (ignoring error) C:\Users\TDS1\Documents\GitHub\java\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/000003.log: dropping 4477 bytes; Corruption: checksum mismatch
+2025/10/24-13:11:42.383 4854 Reusing old log C:\Users\TDS1\Documents\GitHub\java\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/000003.log 
