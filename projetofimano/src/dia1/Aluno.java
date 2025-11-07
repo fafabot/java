@@ -1,39 +1,53 @@
 package dia1;
 
 public class Aluno {
-    String nome;
-    String turma;
-    String matricula;
-    int totalFaltas = 0;
-    Falta[] faltas = new Falta[10]; // máximo de 10 faltas
-    int indiceFalta = 0;
+    private String nome;
+    private String turma;
+    private String matricula;
+    private int totalFaltas = 0;
+    private Falta[] faltas = new Falta[10];
+    private int indiceFalta = 0;
 
-    public Aluno(String nome, String turma, String matricula) {
-        this.nome = nome;
-        this.turma = turma;
-        this.matricula = matricula;
-    }
+    // GETTERS e SETTERS
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
 
-    public void registrarFalta(String data, String motivo) {
+    public String getTurma() { return turma; }
+    public void setTurma(String turma) { this.turma = turma; }
+
+    public String getMatricula() { return matricula; }
+    public void setMatricula(String matricula) { this.matricula = matricula; }
+
+    public int getTotalFaltas() { return totalFaltas; }
+
+ 
+    public void settotalFaltas(int totalFaltas) { this.totalFaltas = totalFaltas; }
+ 
+    public void adicionarFalta(Falta f) {
         if (indiceFalta < faltas.length) {
-            faltas[indiceFalta] = new Falta(data, motivo);
+            faltas[indiceFalta] = f;
             indiceFalta++;
             totalFaltas++;
-            System.out.println("✅ Falta registrada com sucesso!");
         } else {
-            System.out.println("⚠️ Limite de faltas atingido!");
+            System.out.println("⚠ Limite máximo de faltas atingido!");
         }
     }
 
-    public void mostrarHistorico() {
-        System.out.println("\n📋 Histórico de " + nome + ":");
+   
+    public void mostrarAluno() {
+        System.out.println("Aluno: " + nome);
+        System.out.println("Turma: " + turma);
+        System.out.println("Matrícula: " + matricula);
+        System.out.println("Total de Faltas: " + totalFaltas);
+    }
+
+  
+    public void mostrarFaltas() {
         if (totalFaltas == 0) {
             System.out.println("Nenhuma falta registrada.");
-        } else {
-            for (int i = 0; i < indiceFalta; i++) {
-                faltas[i].mostrarFalta();
-            }
-            System.out.println("Total de faltas: " + totalFaltas);
+            return;
         }
+
+   
     }
 }
